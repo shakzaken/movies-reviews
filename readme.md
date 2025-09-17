@@ -44,14 +44,14 @@ Here are the main endpoints:
 | **Reviews** | `POST` | `/api/movies/{movieId}/reviews`               | Add a review to a movie. Body: `{ "userId", "rating", "comment", "reviewDate" }` |
 |           | `DELETE` | `/api/movies/{movieId}/reviews/{reviewId}`     | Delete a specific review by its ID |
 
-### Aggregation / Analytics Endpoints (if implemented)
+### Aggregation / Analytics Endpoints 
 
 These are additional endpoints you may have:
 
-- `GET /api/movies/top-rated?limit=N` — return top N movies by average rating
-- `GET /api/movies/genre-stats` — group movies by genre, with each genre’s average rating and review count
-- `GET /api/users/active-reviewers?minReviews=N` — users who have written more than N reviews
-- `GET /api/reviews/monthly-count` — number of reviews per month over the past year
+- `GET /api/query/rated-movies` — return top N movies by average rating
+- `GET /api/query/movies-by-genre` — group movies by genre, with each genre’s average rating and review count
+- `GET /api/query/users-watched-movies` — users who have written more than N reviews
+- `GET /api/query/monthly-review-count` — number of reviews per month over the past year
 
 ---
 
