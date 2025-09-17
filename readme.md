@@ -90,7 +90,6 @@ spring.data.mongodb.database=movie_reviews_db
 By default the application runs on port 8080 (unless configured otherwise). Use Postman or similar tools to test endpoints, for example:
 
 
-``
-http://localhost:8080/api/users
-http://localhost:8080/api/movies
-``
+```
+ http://localhost:8080/api/users
+ http://localhost:8080/api/movies
